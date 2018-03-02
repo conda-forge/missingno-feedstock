@@ -14,9 +14,7 @@ Summary: Missing data visualization module for Python.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/missingno-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/missingno-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/missingno-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/missingno-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/missingno-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/missingno-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/missingno-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/missingno-feedstock)
 
 Current release info
 ====================
