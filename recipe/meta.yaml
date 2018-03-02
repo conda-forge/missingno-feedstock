@@ -1,6 +1,6 @@
 {% set name = "missingno" %}
-{% set version = "0.3.7" %}
-{% set sha256 = "d9413b60e950bf8f5fb48d145f3897b3910d39cc370c1ae1a593ebac9167e27b" %}
+{% set version = "0.4.0" %}
+{% set sha256 = "f262546691f22a79933faa23fe97acce68e9c919a1a8d1e8b71fd7f16ad4941b" %}
 
 package:
   name: {{ name|lower }}
