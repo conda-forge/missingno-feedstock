@@ -1,4 +1,4 @@
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: missingno
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/m/missingno/missingno-{{ version }}.tar.gz
-  sha256: f262546691f22a79933faa23fe97acce68e9c919a1a8d1e8b71fd7f16ad4941b
+  sha256: 3f192fd713619694b16bbc4c5021fdb4edfb39188e86e2adf03e67a876249479
 
 build:
   noarch: python
