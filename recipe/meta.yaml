@@ -1,4 +1,4 @@
-{% set version = "0.4.2" %}
+{% set version = "0.5.1" %}
 
 package:
   name: missingno
@@ -6,15 +6,15 @@ package:
 
 source:
   url: https://pypi.io/packages/source/m/missingno/missingno-{{ version }}.tar.gz
-  sha256: 02eb92085e4efa0d4c06239750ac44a8d6cc5979bf5b954a09c47b648413ff41
+  sha256: 22e1735a9213df7425e76123ebcc627d11a2608a1d725b90c6a2d7329db718db
 
 build:
   noarch: python
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - python
     - pip
   run:
@@ -33,8 +33,8 @@ about:
   home: https://github.com/ResidentMario/missingno
   license: MIT
   license_family: MIT
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
-  summary: 'Missing data visualization module for Python.'
+  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE
+  summary: Missing data visualization module for Python.
 
 extra:
   recipe-maintainers:
