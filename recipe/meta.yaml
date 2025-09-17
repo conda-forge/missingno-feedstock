@@ -5,20 +5,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/m/missingno/missingno-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/m/missingno/missingno-{{ version }}.tar.gz
   sha256: 4a4baa9ca9f9e4e0d9402455df26b656632e94b99e87fa64c0cdbbbc722837ac
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - numpy
     - scipy
     - pandas
@@ -26,6 +26,8 @@ requirements:
     - seaborn
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - missingno
 
